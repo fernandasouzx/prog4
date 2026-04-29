@@ -21,6 +21,25 @@ lis.forEach((li) => {
   
 })
 
-
-
-// lis.classList.toggle("visible");
+  const curiosities = [
+    "☕ A produção gastava mais de $1.000 por semana apenas em copos de café vazios para usar como props.",
+    "📺 Lauren Graham e Alexis Bledel se tornaram amigas reais durante as filmagens e mantêm a amizade até hoje.",
+    "🎵 A música tema 'Where You Lead' é cantada por Carole King, que também aparece como personagem na série.",
+    "🏆 Gilmore Girls ganhou o prêmio de melhor drama do Television Critics Association em 2002.",
+    "📖 Amy Sherman-Palladino disse que as 'quatro últimas palavras' da série foram planejadas antes mesmo do piloto ser filmado.",
+    "🎬 Edward Herrmann (Richard Gilmore) era fã apaixonado de Rory na vida real e adorava os livros que ela lia na série.",
+    "🌿 O jardim de Luke foi plantado e cuidado por uma equipe de jardinagem que trabalhava nos dias de folga das filmagens.",
+    "☕ Existem cafés temáticos de Gilmore Girls ao redor do mundo, especialmente nos EUA e Japão.",
+    "📚 A lista de livros de Rory Gilmore virou livro impresso — 'The Gilmore Girls' Guide to Life' incluía todos os títulos mencionados.",
+    "🎭 Kelly Bishop (Emily Gilmore) era dançarina profissional antes de virar atriz — ela ganhou um Tony Award na Broadway."
+  ];
+  let lastRandom = -1;
+ 
+  function showRandomCuriosity() {
+    let idx;
+    do { idx = Math.floor(Math.random() * curiosities.length); } while (idx === lastRandom);
+    lastRandom = idx;
+    const display = document.getElementById('random-curiosity-display');
+    display.textContent = curiosities[idx];
+    display.classList.add('visible');
+  }
