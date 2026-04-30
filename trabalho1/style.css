@@ -2,37 +2,31 @@
 
 html {
     background-color: #fbeddd;
-    display: flex;
-    justify-content: center;
     overflow-x: hidden;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    overflow-x: hidden;
+    margin: 0;
 }
 
 .content {
     display: flex;
     flex-direction: row;
-    padding: 20px;
 }
 
 header {
-    background-color: #EAD8C4;
-    font-family: 'Playfair Display', serif;
-    color: #fff;
-    padding: 40px 32px 24px;
-    text-align: left;
-    overflow: hidden;
-    font-size: 25px;
-    width: 100%;
-    position: relative;
     display: flex;
     flex-direction: column;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
 }
 
 h1 {
@@ -41,21 +35,26 @@ h1 {
     font-style: italic;
     color: #ffffff;
     text-shadow: 10px 28px 48px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
 h2 {
     font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-size: 35px;
+    font-size: 40px;
     color: #5A3A2A;
     text-shadow: 10px 28px 48px rgba(0, 0, 0, 0.1);
+    padding: 0px;
+    margin: 50px 0 20px 10px;
 }
 
 h3 {
-    font-family: 'Lora', serif;
+    font-family: 'Playfair Display', serif;
     font-style: italic;
-    color: #642802;
-    font-weight: 400;
+    font-size: 25px;
+    color: #5A3A2A;
+    text-shadow: 10px 28px 48px rgba(0, 0, 0, 0.1);
+    margin: 0 0 0 0;
 }
 
 h4 {
@@ -66,8 +65,8 @@ h4 {
     text-align: left;
     margin: 10px;
     margin-top: 30px;
+    font-size: 16px;
 }
-
 
 .quote {
     order: 3;
@@ -76,10 +75,7 @@ h4 {
 .title {
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
     width: 100%;
-
-
 }
 
 .title-underline {
@@ -88,32 +84,28 @@ h4 {
     background: linear-gradient(90deg, #cc7242, #f1ba6e);
     border-radius: 2px;
     margin-top: -15px;
-
 }
 
 #header_first_title {
     color: pink;
-    gap: 1px;
     font-family: 'Crimson Text', serif;
-    font-size: 0.8rem;
-    letter-spacing: 0.35em;
+    font-size: 14px;
+    letter-spacing: 4px;
     text-transform: uppercase;
     opacity: 0.85;
     padding: 20px;
-
 }
 
 #header_subtitle {
     font-family: 'Crimson Text', serif;
     font-style: italic;
-    font-weight: 400;
     color: #fff;
     font-size: 20px;
-    margin-top: -50px;
     padding: 20px;
 }
 
 .imagem_fundo {
+    overflow: hidden;
     position: absolute;
     top: 0;
     left: 0;
@@ -216,20 +208,22 @@ main {
 }
 
 /* controla o bloco de texto */
-.texto_inicio {
+.texto_inicio p {
     display: flex;
     flex-direction: column;
     max-width: 800px;
     color: #3b1802;
     font-family: 'Lora', serif;
     font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 .texto_inicio img {
     width: 200px;
     height: 100%;
     margin-top: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .imagem_elas img {
@@ -239,7 +233,7 @@ main {
     /* Alterado de 10px para auto */
     height: 100%;
     margin-top: 10px;
-    margin-bottom: -100px;
+    margin-bottom: -150px;
 
 }
 
@@ -262,6 +256,7 @@ main {
     font-size: 12px;
     margin-right: 5px;
     display: inline-block;
+
 }
 
 .tag1:hover {
@@ -277,9 +272,9 @@ main {
     background-color: #EAD8C4;
     align-items: start;
     justify-content: center;
-    margin-top: -20px;
     width: 100%;
 }
+
 
 .personagem-card h3 {
     font-family: 'Playfair Display', serif;
@@ -288,14 +283,24 @@ main {
     color: #5A3A2A;
     text-shadow: 10px 28px 48px rgba(0, 0, 0, 0.1);
     margin: 10px;
+    margin-bottom: 20px;
+}
+.personagem-card span {
+    padding: 0px;
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    font-style: normal;
+    color: #450807;
+    text-align: left;
+    margin: 10px;
+    margin-top: 0px;
     margin-bottom: 30px;
 }
-
-.personagem-card span {
+.container_badges span {
     font-family: 'Lora', serif;
-    font-size: 14px;
-    font-style: 300;
-    margin: 10px;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .personagem-card img {
@@ -309,16 +314,16 @@ main {
 }
 
 .personagem-card li {
-    width: 200px;
+    width: 250px;
     background: #f8f2f2;
     border-radius: 5px 5px 0px 0px;
-    margin-bottom: 20px;
+    align-self: flex-start;
+    gap:20px;
     overflow-x: hidden;
 
 }
 
 .personagem-card p {
-    padding: 0px;
     background: #f8f2f2;
     font-family: 'Lora', serif;
     font-size: 14px;
@@ -344,11 +349,12 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 0;
+    padding: 20px;
     margin: 0px;
     margin-top: 10px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin-bottom: 40px;
 
 }
 
@@ -374,70 +380,135 @@ main {
     font-style: italic;
     color: #642802;
     text-align: left;
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 30px;
+}
+
+#demais_personagens {
+    background-color: #f9f3e8;
+    border-left: 4px solid #8B4513;
+    border-radius: 8px 0 0 8px;
+    padding: 24px 32px;
+    margin: 15px 0;
+}
+
+#demais_personagens h2 {
+    font-size: 1.5rem;
+    color: #4a2c0a;
+    margin-bottom: 16px;
+}
+
+#demais_personagens ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#demais_personagens ul li {
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    flex: 0 0 calc(33.333% - 11px); /* forcar a ficar 3 tags em cada linha */
+}
+.tag2 {
+    width: 100%;
+    height: 100%;
+    background-color: #70370c67; 
+    color: #321403;
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 12px 32px rgba(90, 40, 10, 0.10);
+
+
+}
+
+.tag2:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(90, 40, 10, 0.10);
+    transition: 0.22s;
 }
 
 /* EPISÓDIOS MEMORAVEIS */
 #Episodios_Memoraveis {
-    padding: 0px;
+    padding: 20px;
     background-color: rgb(234, 216, 196);
     font-family: 'Lora', serif;
     font-size: 14px;
     font-style: normal;
     color: #ffffff;
-    text-align: rigth;
+    padding: 20px;
 }
-
-#Episodios_Memoraveis h2 {
-    display: flex;
+#Episodios_Memoraveis h3{
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-size: 30px;
     color: #5A3A2A;
     text-shadow: 10px 28px 48px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+
+.descricao_momento h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-style: normal;
+    color: #ec8f47;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+#Episodios_Memoraveis span{
+    padding: 0px;
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    font-style: normal;
+    color: #450807;
+    text-align: left;
+    margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 30px;;
 }
 
 .ep_memoraveis ol li {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
+    gap: 20px;
+    align-items: flex-start;
     background: rgba(55, 37, 37, 0.692);
-
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(15px);
-    /* Suporte para navegadores Safari */
-
     border-radius: 20px;
-    border: 1px solid rgba(22, 22, 22, 0.15);
-
-    gap: 10px;
-
-    padding: 10px;
-    /* Aumentei o padding para o texto e a imagem não colarem na borda */
+    padding: 16px;
     color: #ffffff;
-    /* Garante que o texto fique legível no fundo escuro */
-
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-
-    margin: 10px;
+    width: 90%;
+    margin-top: 20px;
 }
 
 .ep_memoraveis ol {
     display: flex;
     flex-direction: column;
-    /* Mantém os cards um debaixo do outro */
     align-items: center;
-    /* Centraliza os cards horizontalmente no meio da página */
-
+    list-style: decimal;
+    gap:20px;
+    padding-left: 15px;
+    list-style-position: inside;
+    width: 100%;                   
+    max-width: 100%;
 }
 
 /* imagens dos episodios*/
-.ep_memoraveis img {
+.ep_memoraveis ol li img {
     width: 400px;
     height: 100%;
     align-items: left;
@@ -450,33 +521,38 @@ main {
     transition: 0.3s;
 }
 
-.descricao_momento {
-    font-size: 12px;
-    margin-bottom: 50px;
-
-}
-
-.descricao_momento h3 {
+.descricao_momento p{
     font-family: 'Lora', serif;
-    font-style: italic;
-    font-size: 20px;
+    font-style: normal;
+    font-size: 14px;
     color: #ffffff;
 }
 
+
 /* Container principal */
 .temporadas {
-    padding: 20px;
-    background-color: rgb(234, 216, 196);
+    display: flex;
+    flex-direction: column;
+    background-color: #EAD8C4;
     font-family: 'Lora', serif;
     font-size: 14px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.temporadas h3{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 30px;
+    color: #5A3A2A;
+    text-shadow: 10px 28px 48px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    margin-bottom: 20px;
 }
 
 /* Tabela */
 .temporadas table {
     width: 100%;
     border-collapse: separate;
-    border-spacing: 0 5px;
-    /* espaço entre linhas */
     font-family: "Lora", serif;
     font-size: 14px;
 }
@@ -491,6 +567,13 @@ main {
     text-transform: uppercase;
 }
 
+#Temporadas{
+    display: flex;
+    flex-direction: column;
+    background-color: #EAD8C4;
+    font-family: 'Lora', serif;
+    font-size: 14px;
+}  
 .temporadas tbody tr {
     background: #fff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
@@ -499,10 +582,15 @@ main {
 
 }
 
-.temporadas thead {
+.temporadas thead th{
+    text-align: center !important;
     background: rgba(73, 52, 22, 0.196);
     color: white;
 
+}
+.temporadas tbody th {
+    text-align: center;
+    font-weight: bold;
 }
 
 .temporadas td {
@@ -529,6 +617,11 @@ main {
     background: #fbeddd;
 }
 
+.temporadas td:nth-child(3),
+.temporadas th:nth-child(3) {
+    white-space: nowrap;
+    text-align: center;
+}
 .tag {
     background: #7b3a12;
     backdrop-filter: blur(10px);
@@ -542,10 +635,29 @@ main {
 }
 
 /* CURIOSIDADES */
+
+.curiosidades {
+    display: flex;
+    flex-direction: column;
+    background-color: #EAD8C4;
+    align-items: start;
+    justify-content: center;
+    padding: 20px;
+}
+
+.curiosidades h3{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 30px;
+    color: #5A3A2A;
+    text-shadow: 10px 28px 48px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
 .curiosidades ul {
     display: flex;
     flex-wrap: wrap;
-    /* permite quebrar linha */
     gap: 15px;
     justify-content: center;
     padding: 0;
@@ -556,8 +668,7 @@ main {
 /* cards */
 .curiosidades li {
     flex: 1 1 220px;
-    /* largura mínima + responsivo */
-    max-width: 250px;
+    max-width: 200px;
 
     background: #fff;
     border-radius: 16px;
@@ -595,7 +706,7 @@ main {
     background: linear-gradient(135deg, #450807, #522001);
     color: white;
     border: none;
-    padding: 0.8rem 1.8rem;
+    padding: 10px;
     border-radius: 30px;
     cursor: pointer;
     font-family: 'Crimson Text', serif;
@@ -605,7 +716,9 @@ main {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    margin-top: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin: 20px;
 }
 
 .random-btn:hover {
@@ -620,15 +733,14 @@ main {
 #random-curiosity-display {
     display: none;
     background: rgba(135, 71, 31, 0.588);
-    border: 1px solid #d66100bb;
-    border-left: 4px solid #522001;
-    border-radius: 0 10px 10px 0;
     padding: 1.2rem 1.5rem;
     margin-top: 1rem;
     font-size: 0.95rem;
     color: white;
     animation: fadeIn 0.3s ease;
     font-style: italic;
+    width: 97.5%;
+
 }
 
 #random-curiosity-display.visible {
@@ -637,19 +749,18 @@ main {
 
 .links {
     padding: 20px;
-    background: #fbeddd;
+    background-color: rgb(234, 216, 196);
     margin: 0;
 }
 
-.links h2 {
-    display: flex;
+.links h3 {
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-size: 30px;
     color: #5A3A2A;
     text-shadow: 10px 28px 48px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
 }
 
 .links ul {
@@ -687,7 +798,7 @@ main {
 
 .links li a {
     text-decoration: none;
-    color: #3b1c0a;
+    color: #3b1802;
     font-weight: 400;
     font-family: 'Lora', serif;
     font-size: 14px;
@@ -766,10 +877,9 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 32px;
-    width: 100%;
     position: relative;
     overflow: hidden;
-
+    width: 100vw;
 
 }
 
@@ -862,7 +972,6 @@ footer>p {
     color: rgb(255, 254, 254);
     margin: 0;
     padding-top: 24px;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
     width: 100%;
     text-align: center;
     letter-spacing: 0.05em;
@@ -871,5 +980,12 @@ footer>p {
 footer a {
     color: #c9a882;
     text-decoration: none;
-    font-weight: 400;
+}
+
+hr.rounded {
+    border: none;
+    border-top: 3px solid #511c06a0;
+    border-radius: 0px;
+    width: 100%;
+    margin: 0;
 }
