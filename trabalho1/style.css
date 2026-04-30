@@ -20,8 +20,6 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    top: 0px;
-    left: 0px;
     width: 100vw;
     height: 100%;
     overflow: hidden;
@@ -31,11 +29,12 @@ header {
 
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 60px;
+    font-size: 68px;
     font-style: italic;
     color: #ffffff;
     text-shadow: 10px 28px 48px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 30px;
+    margin-top: -10px;
 }
 
 h2 {
@@ -89,19 +88,24 @@ h4 {
 #header_first_title {
     color: pink;
     font-family: 'Crimson Text', serif;
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: 4px;
     text-transform: uppercase;
     opacity: 0.85;
-    padding: 20px;
+    padding: 30px;
+    margin-top: 30px;
 }
 
 #header_subtitle {
     font-family: 'Crimson Text', serif;
     font-style: italic;
     color: #fff;
-    font-size: 20px;
-    padding: 20px;
+    font-size: 24px;
+    padding: 30px;
+    margin-top: -15px;
+    margin-bottom: -10px;
+
+
 }
 
 .imagem_fundo {
@@ -149,7 +153,6 @@ header>*:not(.imagem_fundo) {
     max-width: 1700px;
     width: 100%;
     padding-inline-start: 0;
-
 }
 
 .menu ul li a {
@@ -159,10 +162,9 @@ header>*:not(.imagem_fundo) {
     font-family: 'Lora', serif;
     font-style: normal;
     padding: 5px 10px;
-    font-size: 14px;
+    font-size: 16px;
     margin-right: 5px;
     display: inline-block;
-
 }
 
 .menu ul li a:hover {
@@ -178,7 +180,6 @@ header>*:not(.imagem_fundo) {
     color: #fff;
     background-color: #7b3b12ca;
     border: 1px solid transparent;
-
 }
 
 .menu ul li a.active:hover {
@@ -196,7 +197,6 @@ main {
     align-items: center;
     width: 100%;
     max-width: 1200px;
-
 }
 
 .inicio-card {
@@ -229,8 +229,7 @@ main {
 .imagem_elas img {
     display: flex;
     flex-direction: row;
-    width: 400px;
-    /* Alterado de 10px para auto */
+    width: 550px;
     height: 100%;
     margin-top: 10px;
     margin-bottom: -150px;
@@ -256,7 +255,6 @@ main {
     font-size: 12px;
     margin-right: 5px;
     display: inline-block;
-
 }
 
 .tag1:hover {
@@ -274,7 +272,6 @@ main {
     justify-content: center;
     width: 100%;
 }
-
 
 .personagem-card h3 {
     font-family: 'Playfair Display', serif;
@@ -306,7 +303,7 @@ main {
 .personagem-card img {
     object-fit: cover;
     width: 100%;
-    height: 250px;
+    height: 350px;
     border-radius: 5px 5px 0px 0px;
     margin-bottom: -10px;
     justify-content: center;
@@ -320,7 +317,7 @@ main {
     align-self: flex-start;
     gap:20px;
     overflow-x: hidden;
-
+    margin-bottom: 10px;
 }
 
 .personagem-card p {
@@ -355,7 +352,6 @@ main {
     justify-content: center;
     align-items: flex-start;
     margin-bottom: 40px;
-
 }
 
 .active-descricao {
@@ -384,6 +380,7 @@ main {
     margin-top: 30px;
 }
 
+/* ARTICLE */
 #demais_personagens {
     background-color: #f9f3e8;
     border-left: 4px solid #8B4513;
@@ -425,8 +422,6 @@ main {
     align-items: center;
     text-align: center;
     box-shadow: 0 12px 32px rgba(90, 40, 10, 0.10);
-
-
 }
 
 .tag2:hover {
@@ -445,6 +440,7 @@ main {
     color: #ffffff;
     padding: 20px;
 }
+
 #Episodios_Memoraveis h3{
     font-family: 'Playfair Display', serif;
     font-style: italic;
@@ -460,7 +456,7 @@ main {
     font-family: 'Playfair Display', serif;
     font-size: 20px;
     font-style: normal;
-    color: #ec8f47;
+    color: #ffa03a;
     text-align: left;
     margin-top: 0px;
     margin-bottom: 20px;
@@ -528,8 +524,7 @@ main {
     color: #ffffff;
 }
 
-
-/* Container principal */
+/* TEMPORADAS */
 .temporadas {
     display: flex;
     flex-direction: column;
@@ -539,6 +534,7 @@ main {
     padding: 20px;
     margin-bottom: 50px;
 }
+
 .temporadas h3{
     font-family: 'Playfair Display', serif;
     font-style: italic;
@@ -598,7 +594,6 @@ main {
     color: #3b1802;
 }
 
-/* bordas arredondadas nas pontas */
 .temporadas td:first-child {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -609,8 +604,6 @@ main {
     border-bottom-right-radius: 10px;
 }
 
-
-/* hover moderno */
 .temporadas tbody tr:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
@@ -635,7 +628,6 @@ main {
 }
 
 /* CURIOSIDADES */
-
 .curiosidades {
     display: flex;
     flex-direction: column;
@@ -665,7 +657,6 @@ main {
     list-style: none;
 }
 
-/* cards */
 .curiosidades li {
     flex: 1 1 220px;
     max-width: 200px;
