@@ -72,22 +72,24 @@ Títulos: #5A3A2A (marrom médio)
 - **Google Fonts**: Tipografia personalizada
 
 ## 📂 Estrutura do Projeto##  Código JavaScript
-gilmore-girls-wiki/
-│
-├── index.html          # Página principal
-├── style.css           # Estilos completos
-├── script.js           # Interações JavaScript
-├── README.md           # Documentação do projeto
-│
-└── imgs/               # Diretório de imagens
-├── stars_hollow.png
-├── gilmoregirls.png
-├── coffee.png
-├── lorelai.png
-├── rory.png
-├── luke.png
-└── [outras imagens de personagens]
-
+```bash
+  gilmore-girls-wiki/
+  │
+  ├── index.html          # Página principal
+  ├── style.css           # Estilos completos
+  ├── script.js           # Interações JavaScript
+  ├── README.md           # Documentação do projeto
+  ├── especificacao.pdf   # Arquivo de Especificação do trabalho
+  │
+  └── imgs/               # Diretório de imagens
+    ├── stars_hollow.png
+    ├── gilmoregirls.png
+    ├── coffee.png
+    ├── lorelai.png
+    ├── rory.png
+    ├── luke.png
+    └── [outras imagens de personagens]
+```
 ### Sistema de Expansão de Cards
 ```javascript
 // Permite expandir/recolher descrições de personagens
