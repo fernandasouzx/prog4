@@ -25,6 +25,7 @@ header {
     overflow: hidden;
     position: relative;
     background-size: cover;
+    text-align: center;
 }
 
 h1 {
@@ -33,8 +34,9 @@ h1 {
     font-style: italic;
     color: #ffffff;
     text-shadow: 10px 28px 48px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+    padding: 0;
     margin-top: -10px;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -100,11 +102,10 @@ h4 {
     font-family: 'Crimson Text', serif;
     font-style: italic;
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     padding: 30px;
-    margin-top: -15px;
-    margin-bottom: -10px;
-
+    margin-top: 25px;
+    margin-bottom: 20px;
 
 }
 
@@ -136,16 +137,17 @@ header>*:not(.imagem_fundo) {
 .menu {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     padding: 20px;
+    align-items: center;
+    text-align: center;
 }
 
 .menu ul {
     font-family: 'Lora', serif;
     font-style: normal;
     font-weight: 400;
-    display: flex;
-    flex-direction: row;
     color: #5A3A2A;
     list-style: none;
     font-size: 18px;
@@ -153,6 +155,15 @@ header>*:not(.imagem_fundo) {
     max-width: 1700px;
     width: 100%;
     padding-inline-start: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 30px;
+
+    width: auto;            
+    margin: 0 auto;         
+    padding: 0;
 }
 
 .menu ul li a {
@@ -165,6 +176,7 @@ header>*:not(.imagem_fundo) {
     font-size: 16px;
     margin-right: 5px;
     display: inline-block;
+    align-items: center;
 }
 
 .menu ul li a:hover {
@@ -456,7 +468,7 @@ main {
     font-family: 'Playfair Display', serif;
     font-size: 20px;
     font-style: normal;
-    color: #ffa03a;
+    color: #fdd8a3;
     text-align: left;
     margin-top: 0px;
     margin-bottom: 20px;
@@ -623,7 +635,7 @@ main {
     border-radius: 20px;
     font-size: 14px;
     box-shadow: 0 2px 8px rgba(90, 58, 42, 0.2);
-
+    
 
 }
 
